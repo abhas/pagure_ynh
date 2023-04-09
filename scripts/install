@@ -99,6 +99,9 @@ ynh_setup_source --dest_dir="$final_path"
 chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
 chown -R $app:www-data "$final_path"
+cd "$final_path/pagure/lib/"
+rm -v model.py
+wget https://raw.githubusercontent.com/abhas/pagure_ynh/testing/model.py
 
 #=================================================
 # NGINX CONFIGURATION
