@@ -29,7 +29,6 @@ from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import backref
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import scoped_session
-from sqlalchemy.orm import relation
 from sqlalchemy.orm import validates
 from sqlalchemy.orm import relationship as relation
 
